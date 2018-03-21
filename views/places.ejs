@@ -1,0 +1,10 @@
+<h1>Cool places!</h1>
+
+<% places.forEach(function(place){ %>
+  <li><%= place %></li>
+<% }); %>
+
+<form action="/addPlace" method="POST">
+  <input type="text" placeholder="Your place" name="newPlace">
+  <button>Add my place!</button>
+</form>
